@@ -1,0 +1,65 @@
+package LABPograms;
+
+import java.util.*;
+//class multi1 extends Thread{
+//    public void run(){
+//        while(true){
+//            System.out.println("A");
+//        }}
+//}
+//class multi2 extends Thread{
+//    public void run(){
+//        while(true){
+//            System.out.println("b");
+//        }}
+//}
+//class MULTI3 extends Thread {
+//    public MULTI3(String name) {
+//        super(name);
+//    }
+//
+//    public void run() {
+//        while (true) {
+//            System.out.println("c");
+//        }
+//    }
+//}
+class CNameThread extends Thread {
+    public void run() {
+        while (true) {
+            System.out.println("BMS College of Engineering");
+            try {
+                Thread.sleep(10000); // Sleep for 10 seconds
+            } catch (InterruptedException e) {
+                System.out.println("interruprtion");
+            }
+        }
+    }
+}
+
+class DNameThread extends Thread {
+    public void run() {
+        while (true) {
+            System.out.println("CSE");
+            try {
+                Thread.sleep(2000); // Sleep for 2 seconds
+            } catch (InterruptedException e) {
+                System.out.println("interruprtion");
+            }
+        }
+    }
+}
+
+
+
+public class threads {
+    public static void main(String[] args) {
+        System.out.println("jana");
+        CNameThread t1 = new CNameThread();
+        DNameThread t2 = new DNameThread();
+
+       t1.start();
+       t2.start();
+    }
+    }
+
