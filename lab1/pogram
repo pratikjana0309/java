@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class QuadraticSolver {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        system.out.pintln("Pratik Jana")
+        System.out.println("Pratik Jana");
 
         // Input coefficients a, b, and c
         System.out.println("Enter coefficient a:");
